@@ -1,0 +1,9 @@
+# Локальные зависимости
+node_modules/
+
+# Файл с ключами (САМОЕ ВАЖНОЕ!)
+keys.csv
+
+# Системные файлы macOS и Windows
+.DS_Store
+Thumbs.db

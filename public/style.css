@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{font-family:'Inter',sans-serif;background-color:#f4f4f9;color:#333;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;padding:20px;box-sizing:border-box}
+.container{max-width:500px;width:100%;text-align:center}
+header h1{font-size:2.5rem;color:#2c3e50;margin-bottom:.5rem}
+.subtitle{font-size:1.1rem;color:#7f8c8d;margin-top:0}
+.disclaimer{background-color:#ecf0f1;border-left:5px solid #3498db;padding:15px;margin:2rem 0;text-align:left;font-size:.9rem;border-radius:5px}
+.disclaimer p{margin:5px 0}
+#getKeyButton{background-color:#3498db;color:white;border:none;padding:15px 30px;font-size:1.2rem;font-weight:bold;border-radius:8px;cursor:pointer;transition:background-color .3s,transform .2s}
+#getKeyButton:hover{background-color:#2980b9}
+#getKeyButton:active{transform:scale(.98)}
+#getKeyButton:disabled{background-color:#95a5a6;cursor:not-allowed}
+.result-card{margin-top:2rem;background:white;padding:20px;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,.1);display:flex;gap:20px;align-items:center}
+.result-card.hidden{display:none}
+#qrCode{padding:5px;background:white;border-radius:5px}
+#qrCode img{display:block}
+.key-container{flex-grow:1;text-align:left}
+.key-container p{margin:0 0 10px 0;font-size:.9rem;color:#7f8c8d}
+textarea#accessKey{width:100%;height:80px;border:1px solid #bdc3c7;border-radius:4px;padding:10px;font-family:monospace;resize:none;box-sizing:border-box;cursor:pointer}
+#copyButton{background-color:#2ecc71;color:white;border:none;padding:10px 15px;margin-top:10px;border-radius:5px;cursor:pointer;width:100%;transition:background-color .3s}
+#copyButton:hover{background-color:#27ae60}

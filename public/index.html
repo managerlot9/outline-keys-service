@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свободный Доступ: Бесплатные ключи Outline VPN</title>
+    <meta name="description" content="Ежедневно обновляемый список бесплатных ключей для Outline VPN. Проект создан для помощи людям в получении свободного и безопасного доступа к информации.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Свободный Доступ</h1>
+            <p class="subtitle">Бесплатные и обновляемые ключи для Outline VPN</p>
+        </header>
+        <div class="disclaimer">
+            <p><strong>Важное уведомление:</strong></p>
+            <p>Ключи взяты из открытых публичных источников. Используйте их ответственно для тестирования, борьбы с цензурой и этических целей. Мы не несем ответственности за злоупотребления или проблемы безопасности.</p>
+            <p>Не используйте эти ключи для финансовых операций или передачи чувствительных данных. Всегда будьте осторожны при работе в интернете и используйте HTTPS.</p>
+        </div>
+        <div class="actions">
+            <button id="getKeyButton">Получить ключ</button>
+        </div>
+        <div id="resultCard" class="result-card hidden">
+            <div id="qrCode"></div>
+            <div class="key-container">
+                <p>Ваш ключ доступа (нажмите для копирования):</p>
+                <textarea id="accessKey" readonly title="Нажмите, чтобы скопировать"></textarea>
+                <button id="copyButton">Копировать</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
