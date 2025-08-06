@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!-- Язык будет установлен динамически -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свободный Доступ: Бесплатные ключи Outline VPN</title>
-    <meta name="description" content="Ежедневно обновляемый список бесплатных ключей для Outline VPN. Проект создан для помощи людям в получении свободного и безопасного доступа к информации.">
+    <!-- Заголовок будет установлен динамически -->
+    <title data-translate-key="pageTitle">Free Access</title>
+    <meta name="description" content="Daily updated list of free keys for Outline VPN. Helping people get free and secure access to information.">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+    <!-- Сначала загружаем словарь, потом основной скрипт -->
+    <script src="lang/translations.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
+
+    <header class="top-bar">
+        <select id="langSwitcher">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="ru">Русский</option>
+            <option value="ja">日本語</option>
+        </select>
+    </header>
+
     <main class="container">
-        <header>
-            <h1>Свободный Доступ</h1>
-            <p class="subtitle">Бесплатные и обновляемые ключи для Outline VPN</p>
-        </header>
+        <div class="main-header">
+            <h1 data-translate-key="headerTitle"></h1>
+            <p class="subtitle" data-translate-key="subtitle"></p>
+        </div>
+
         <div class="disclaimer">
-            <p><strong>Важное уведомление:</strong></p>
-            <p>Ключи взяты из открытых публичных источников. Используйте их ответственно для тестирования, борьбы с цензурой и этических целей. Мы не несем ответственности за злоупотребления или проблемы безопасности.</p>
-            <p>Не используйте эти ключи для финансовых операций или передачи чувствительных данных. Всегда будьте осторожны при работе в интернете и используйте HTTPS.</p>
+            <p><strong data-translate-key="disclaimerTitle"></strong></p>
+            <p data-translate-key="disclaimerP1"></p>
+            <p data-translate-key="disclaimerP2"></p>
         </div>
+
         <div class="actions">
-            <button id="getKeyButton">Получить ключ</button>
+            <button id="getKeyButton" data-translate-key="getKeyButton"></button>
         </div>
+
         <div id="resultCard" class="result-card hidden">
             <div id="qrCode"></div>
             <div class="key-container">
-                <p>Ваш ключ доступа (нажмите для копирования):</p>
-                <textarea id="accessKey" readonly title="Нажмите, чтобы скопировать"></textarea>
-                <button id="copyButton">Копировать</button>
+                <p data-translate-key="resultCardTitle"></p>
+                <textarea id="accessKey" readonly title="Click to copy"></textarea>
+                <button id="copyButton" data-translate-key="copyButton"></button>
             </div>
         </div>
     </main>
+
 </body>
-</html>
+</html>```
