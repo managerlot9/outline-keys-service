@@ -6,11 +6,13 @@
     <title data-translate-key="pageTitle"></title>
     <meta name="description" content="Daily updated list of free keys for Outline VPN.">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+    <!-- ИЗМЕНЕНИЕ: Убираем 'defer', чтобы библиотека загружалась синхронно и была доступна сразу -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
     <script src="lang/translations.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Остальная часть body остается без изменений -->
     <header class="top-bar">
         <select id="langSwitcher">
             <option value="en">English</option>
@@ -20,13 +22,11 @@
             <option value="ja">日本語</option>
         </select>
     </header>
-
     <main class="container">
         <div class="main-header">
             <h1 data-translate-key="headerTitle"></h1>
             <p class="subtitle" data-translate-key="subtitle"></p>
         </div>
-
         <div class="controls">
             <label for="countryFilter" data-translate-key="countryFilterLabel"></label>
             <select id="countryFilter">
@@ -34,7 +34,6 @@
             </select>
             <button id="getKeyButton" data-translate-key="getKeyButton"></button>
         </div>
-
         <div id="resultCard" class="result-card hidden">
             <div class="qr-code-wrapper">
                 <div id="qrCode"></div>
@@ -49,7 +48,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="clients-info">
             <h2 data-translate-key="clientsTitle"></h2>
             <p data-translate-key="clientsDescription"></p>
@@ -57,7 +55,6 @@
                 <li><a href="https://getoutline.org/get-started/#step-3" target="_blank" rel="noopener noreferrer" data-translate-key="outlineClient"></a> (Windows, MacOS, Linux, Android, iOS)</li>
             </ul>
         </div>
-        
         <div class="disclaimer">
             <p><strong data-translate-key="disclaimerTitle"></strong></p>
             <p data-translate-key="disclaimerP1"></p>
